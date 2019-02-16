@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- link to chartjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+
+    <!-- bootstrap styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>chart</title>
+
+</head>
+
+
+<body>
+
+    <main class="container">
+        <!-- navbar -->
+
+
+        <div class="d-flex">
+            <!-- list of cursors -->
+            <h2> Parameters </h2>
+            <ul>
+                <li>Shape</li>
+                <li>Pattern</li>
+                <li>Color</li>
+                <li>Object</li>
+                <li>Action</li>
+            </ul>
+        </div>
+
+        <!-- doughnut chart -->
+        <canvas id="mainChart"></canvas>
+
+        <!-- pizza grid -->
+        <aside id="pizzaGrid">
+
+            <button id="getPizzas"> Get the pizzas </button>
+
+            <!-- loop the pizzas from the API -->
+            <div >
+                <ul id="pizzasDisplay">
+
+                </ul>
+
+
+            </div>
+
+        </aside>
+
+
+    </main>
+
+    <!-- external javascript file -->
+    <script src="./javascript/main.js"></script>
+    <script src="./javascript/retrieveData.js"></script>
+
+
+</body>
+
+
+</html>
