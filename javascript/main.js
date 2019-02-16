@@ -11,6 +11,7 @@ Chart.defaults.global.defaultFontColor =  'grey';
 let massPopChart = new Chart(mainChart, {
   type: 'doughnut', //type of chart
   data: {
+    labels:['Peperroni', 'Calzone', 'Hawaian', 'Margherita', 'four cheese', 'naoplitan'],
     datasets: [{
       label: 'Population',
       data: [
@@ -44,13 +45,6 @@ let massPopChart = new Chart(mainChart, {
       fontSize: 25
     },
 
-    legend:{
-      position: 'left',
-      labels:{
-        fontColor:'black'
-      }
-    },
-
     layout:{
       padding:{
         left: 50,
@@ -58,6 +52,7 @@ let massPopChart = new Chart(mainChart, {
         top: 50,
         bottom: 50
       },
+
     }
   }
 });

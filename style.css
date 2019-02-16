@@ -14,13 +14,19 @@ header {
     height: auto;
 }
 
-main {
+/* main {
     display: flex;
     flex-direction: row;
-}
+} */
 
 #pizzasDisplay img {
     width: 100px;
     height: 100px;
 }
 
+
+/* to debug */
+/* canvas#mainChart.chartjs-render-monitor {
+    width: 800px;
+    height: 350px
+} */
