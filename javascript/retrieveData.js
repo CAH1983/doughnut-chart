@@ -11,30 +11,14 @@ const imgArray = [
 
 
 function getPhotos() {
-// create a dumpster-node for the images to reside in 
-const fragment = document.createDocumentFragment();
 
-// iterate the data and create <img> elements
-imgArray.forEach(url => {
-  let image = new Image()
-  image.src = url;
-  fragment.appendChild(image);
-})
+  imgArray.forEach(url => {
+    let newLi = document.createElement('LI');
+    let image = new Image()
+    image.src = url;
+    pizzasDisplay.appendChild(image);
+  })
 
-// dump the fragment into the DOM all the once (FTW)
-document.body.appendChild(fragment);
 }
-
-
-// function getText() {
-
-//   fetch('./data/rawData.txt')
-//     .then((res) => res.text())
-//     .then((data) => {
-//       pizzasDisplay.innerHTML = data;
-//     });
-// }
-
-
 
 getPizzasBtn.addEventListener('click', getPhotos);
