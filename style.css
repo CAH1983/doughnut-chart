@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+}
+
+
+header {
+    height: 100px;
+    background-color: black;
+}
+
+#logo img {
+    background-size: cover;
+    width: 100px;
+    height: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+#pizzasDisplay img {
+    width: 100px;
+    height: 100px;
+}
+

@@ -7,20 +7,27 @@
     <!-- link to chartjs -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
 
-    <!-- bootstrap styling -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <title>chart</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+        <title>chart</title>
 
 </head>
 
 
 <body>
 
-    <main class="container">
+    <header>
+
+        <div id="logo"> <img src="jaggulogo.png" alt="logo jaggu"> </div>
+
+    </header>
+
+
+    <main>
         <!-- navbar -->
 
 
-        <div class="d-flex">
+        <div>
             <!-- list of cursors -->
             <h2> Parameters </h2>
             <ul>
@@ -33,23 +40,20 @@
         </div>
 
         <!-- doughnut chart -->
-        <canvas id="mainChart"></canvas>
+        <div>
+            <canvas id="mainChart"></canvas>
+        </div>
 
         <!-- pizza grid -->
-        <aside id="pizzaGrid">
+        <div id="pizzaGrid">
 
             <button id="getPizzas"> Get the pizzas </button>
 
-            <!-- loop the pizzas from the API -->
+            <!-- loop the pizzas -->
             <div >
-                <ul id="pizzasDisplay">
-
-                </ul>
-
-
+                <ul id="pizzasDisplay"> </ul>
             </div>
-
-        </aside>
+        </div>
 
 
     </main>
