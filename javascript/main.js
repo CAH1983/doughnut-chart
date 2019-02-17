@@ -42,7 +42,7 @@ let massPopChart = new Chart(mainChart, {
     title: {
       display:true,
       text: 'Best pizzas in town',
-      fontSize: 25
+      fontSize: 25,
     },
 
     layout: {
@@ -53,7 +53,7 @@ let massPopChart = new Chart(mainChart, {
         bottom: 50
       },
     responsive: true,
-    maintainAspectRatio: true,
+    maintainAspectRatio: false,
     }
   }
 });

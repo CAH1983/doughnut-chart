@@ -1,11 +1,13 @@
+
 body {
     margin: 0;
     background-color: lightgrey;
+    font-family: verdana;
 }
 
 
 header {
-    height: 100px;
+    height: 50px;
     background-color: black;
 }
 
@@ -18,25 +20,33 @@ header {
 main {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 #cursorsContainer {
+    height: 350px;
     flex-grow: 1;
-    height: 25vh;
-    border-radius: 5;
+    font-size: 10px;
 }
 
 #doughnutContainer {
-    /* width: 800px;
-    height: auto; */
     flex-grow: 2;
-    position: relative
 }
 
+/* pizzas container */
+#pizzaGrid {
+    width: 350px;
+    height: auto;
+}
+
+/* pizzes thumbnails */
 #pizzasDisplay img {
     width: 100px;
     height: 100px;
+}
+
+#pizzasDisplay {
+    flex-wrap: wrap;
 }
 
 #cursorsContainer,
@@ -47,11 +57,9 @@ main {
     margin: 15px;
 }
 
-#pizzaGrid {
-    flex-grow: 1;
+
+#whiteBar {
+    height: 50px;
+    background-color: white;
 }
-/* to debug */
-/* canvas#mainChart.chartjs-render-monitor {
-    width: 800px;
-    height: 350px
-} */
+
