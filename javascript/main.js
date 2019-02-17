@@ -11,9 +11,9 @@ Chart.defaults.global.defaultFontColor =  'grey';
 let massPopChart = new Chart(mainChart, {
   type: 'doughnut', //type of chart
   data: {
-    labels:['Peperroni', 'Calzone', 'Hawaian', 'Margherita', 'four cheese', 'naoplitan'],
+    // labels:['Peperroni', 'Calzone', 'Hawaian', 'Margherita', 'four cheese', 'napolitan'],
     datasets: [{
-      label: 'Population',
+      label: 'customers',
       data: [
         617594,
         181045,
@@ -39,20 +39,21 @@ let massPopChart = new Chart(mainChart, {
     }]
   },
   options: {
-    title:{
+    title: {
       display:true,
       text: 'Best pizzas in town',
       fontSize: 25
     },
 
-    layout:{
-      padding:{
+    layout: {
+      padding: {
         left: 50,
         right: 50,
         top: 50,
         bottom: 50
       },
-
+    responsive: true,
+    maintainAspectRatio: true,
     }
   }
 });
