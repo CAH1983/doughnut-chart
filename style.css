@@ -30,6 +30,11 @@ main {
     padding: 5px
 }
 
+.slidecontainer input {
+    
+
+
+}
 h3 {
     font-size: 14px;
     font-weight: bold
@@ -43,6 +48,17 @@ h3 {
 #pizzaGrid {
     width: 350px;
     height: auto;
+}
+
+#graphHeader span:last-child {
+    justify-content: center;
+    
+
+}
+
+#graphHeader input {
+    width: 115px;
+    margin: 5px 5px 0px 5px;
 }
 
 /* pizzes thumbnails */
@@ -62,11 +78,15 @@ h3 {
     background-color: white;
     border-radius: 5px;
     margin: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
 #whiteBar {
     height: 50px;
     background-color: white;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
