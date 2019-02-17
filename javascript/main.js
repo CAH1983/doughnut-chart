@@ -3,7 +3,7 @@ let mainChart = document.getElementById('mainChart').getContext('2d');
 
 // global options for fonts
 
-Chart.defaults.global.defaultFontFamily = 'Lato';
+Chart.defaults.global.defaultFontFamily = 'Verdana';
 Chart.defaults.global.defaultFontSize =  14;
 Chart.defaults.global.defaultFontColor =  'grey';
 
@@ -39,11 +39,6 @@ let massPopChart = new Chart(mainChart, {
     }]
   },
   options: {
-    title: {
-      display:true,
-      text: 'Best pizzas in town',
-      fontSize: 25,
-    },
 
     layout: {
       padding: {
