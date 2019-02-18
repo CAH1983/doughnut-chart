@@ -33,9 +33,27 @@ main {
 
 h3 {
     font-size: 14px;
-    font-weight: bold
+    font-weight: bold;
+    margin-bottom: 30px
 
 }
+
+.slidecontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slidecontainer input {
+    width: 100px;
+
+}
+
+.slidecontainer >:first-child {
+    width: 65px;
+}
+
 #doughnutContainer {
     flex-grow: 2;
 }

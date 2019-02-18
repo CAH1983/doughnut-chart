@@ -52,3 +52,15 @@ let massPopChart = new Chart(mainChart, {
     }
   }
 });
+
+
+// rangle sliders
+
+const slider = document.getElementById('cursorsContainer').querySelectorAll("input");
+var output = document.getElementsByClassName('percentage');
+
+output.innerHTML = slider.value;
+
+slider.oninput = function () {
+  output.innerHTML = this.value + '%';
+}
