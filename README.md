@@ -10,9 +10,9 @@ Try to do as much as possible on the front-end part (as discussed earlier) invol
 * Inserted the range sliders.
 * Designed and tweaked the layout.
 * Styled, added eventlisteners and functions all along.
-* Spent a lot of time fixing errors
+* Spent a lot of time fixing errors.
 
-I decided to customize the UI by adding a button to display the pizza thumbnails. My main focus was to make the functionalities work and overcome diverse incompatibilities between different technologies.
+I decided to customize the UI by adding a button to display the pizza thumbnails and play around with different colors. My main focus was to make the functionalities work and overcome diverse conflicts between different technologies.
 
 ## Initial state 
 

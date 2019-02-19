@@ -24,7 +24,6 @@ let massPopChart = new Chart(mainChart, {
       ],
       // custom colors and hover effect on the chart
       backgroundColor:[
-
         '#434343',
         '#F7A86C',
         '#43e5f7',
@@ -57,7 +56,6 @@ let massPopChart = new Chart(mainChart, {
 // update the input above the doughnut chart
 const graphInput = document.getElementById('graphHeader').querySelector('input');
 
-
 function updateText() {
   let result = document.getElementById('result');
   result.innerHTML = graphInput.value;
@@ -65,7 +63,7 @@ function updateText() {
 
 graphInput.addEventListener('change', updateText);
 
-// test range slider function to update the percentage (tried to DRY it using for loops but didn't work)
+// Function to update the percentage according to range slider (tried to DRY it using for loops but didn't work)
 
 const sliderOne = document.getElementById('slider1');
 const sliderTwo = document.getElementById('slider2');

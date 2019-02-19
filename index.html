@@ -1,115 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- link to chartjs -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- link to chartjs -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
 
 
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="stylesheet" type="text/css" href="./style.css">
 
+        <title>Jaggu Code test</title>
 
-    <title>Jaggu Code test</title>
-
-</head>
-
-
-<body>
-
-    <!-- navbar -->
-    <header>
-        <div id="logo"> <img src="jaggulogo.png" alt="logo jaggu"> </div>
-    </header>
-
-    <div id="whiteBar"></div>
+    </head>
 
 
-    <main>
-        <div id="cursorsContainer">
-            <!-- list of cursors -->
-            <h3> Parameters </h3>
+    <body>
 
-            
-            <div class="slidecontainer" >
-                <div> Shape </div>
-                <div><input id="slider1" type="range" min="1" max="100" value="50"></div>
-                <div class="percentage" id="percentage1"> 00% </div>
+        <!-- navbar -->
+        <header>
+            <div id="logo"> <img src="jaggulogo.png" alt="logo jaggu"> </div>
+        </header>
+
+        <div id="whiteBar"></div>
+
+
+        <main>
+            <div id="cursorsContainer">
+                <!-- list of range sliders -->
+                <h3> Parameters </h3>
+                
+                <div class="slidecontainer" >
+                    <div> Shape </div>
+                    <div><input id="slider1" type="range" min="1" max="100" value="50"></div>
+                    <div class="percentage" id="percentage1"> 00% </div>
+                </div>
+                <div class="slidecontainer" >
+                    <div> Pattern </div>
+                    <div><input id="slider2" type="range" min="1" max="100" value="50"></div>
+                    <div class="percentage" id="percentage2">  45% </div>
+                </div>
+                <div class="slidecontainer">
+                    <div> Colour </div>
+                    <div><input id="slider3" type="range" min="1" max="100" value="50"></div>
+                    <div class="percentage" id="percentage3">  45% </div>
+                </div>
+                <div class="slidecontainer">
+                    <div> Object </div>
+                    <div><input id="slider4" type="range" min="1" max="100" value="50"></div>
+                    <div class="percentage" id="percentage4">  45% </div>
+                </div>
+                <div class="slidecontainer">
+                    <div> Activities </div>
+                    <div><input id="slider5" type="range" min="1" max="100" value="50"></div>
+                    <div class="percentage" id="percentage5">  45% </div>
+                </div>
+
+
             </div>
-            <div class="slidecontainer" >
-                <div> Pattern </div>
-                <div><input id="slider2" type="range" min="1" max="100" value="50"></div>
-                <div class="percentage" id="percentage2">  45% </div>
-            </div>
-            <div class="slidecontainer">
-                <div> Colour </div>
-                <div><input id="slider3" type="range" min="1" max="100" value="50"></div>
-                <div class="percentage" id="percentage3">  45% </div>
-            </div>
-            <div class="slidecontainer">
-                <div> Object </div>
-                <div><input id="slider4" type="range" min="1" max="100" value="50"></div>
-                <div class="percentage" id="percentage4">  45% </div>
-            </div>
-            <div class="slidecontainer">
-                <div> Activities </div>
-                <div><input id="slider5" type="range" min="1" max="100" value="50"></div>
-                <div class="percentage" id="percentage5">  45% </div>
-            </div>
 
+            <!-- doughnut chart -->
+                <div id="doughnutContainer">
+                    <div id="graphHeader">
+                        <div id="inputContainer">
+                            <input type="text" placeholder="Enter a value">
+                            <button> 🏀 </button> 
+                        </div>
 
-        </div>
-
-        <!-- doughnut chart -->
-            <div id="doughnutContainer">
-                <div id="graphHeader">
-                    <div id="inputContainer">
-                        <input type="text" placeholder="Enter a value">
-                        <button> 🏀 </button> 
+                        <div id="result"> 00,000 </div>
+                        
                     </div>
 
-                    <div id="result"> 00,000 </div>
-                    
+                    <hr>
 
+                    <canvas id="mainChart"></canvas>
                 </div>
+
+            <!-- pizza grid -->
+            <div id="pizzaGrid">
+                <div>
+                    <button class="mx-auto btn btn-dark btn-lg" id="getPizzas"> Get the pizzas </button>
+                </div>
+
                 <hr>
-                <canvas id="mainChart"></canvas>
+
+                <!-- loop the pizzas -->
+                <div >
+                    <div id="pizzasDisplay"> </div>
+                </div>
+
             </div>
 
-        <!-- pizza grid -->
-        <div id="pizzaGrid">
-            <div>
-                <button class="mx-auto btn btn-dark btn-lg" id="getPizzas"> Get the pizzas </button>
-            </div>
+        </main>
 
-            <hr>
-
-            <!-- loop the pizzas -->
-            <div >
-                <div id="pizzasDisplay"> </div>
-            </div>
-        </div>
+            <!-- external javascript file -->
+            <script src="./javascript/main.js"></script>
+            <script src="./javascript/retrieveData.js"></script>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script>
 
 
-    </main>
-
-    <!-- external javascript file -->
-    <script src="./javascript/main.js"></script>
-    <script src="./javascript/retrieveData.js"></script>
-    <!-- <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-
-
-</body>
+    </body>
 
 
 </html>
