@@ -25,12 +25,12 @@ let massPopChart = new Chart(mainChart, {
       // custom colors and hover effect on the chart
       backgroundColor:[
 
-        'yellow',
-        'orange',
-        'blue',
+        '#434343',
+        '#F7A86C',
+        '#43e5f7',
         'pink',
-        'brown',
-        'violet'
+        '#D3D3D3',
+        '#FFFACD'
       ],
       borderWidth: 2,
       borderColor: '#777',
