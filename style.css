@@ -64,16 +64,25 @@ h3 {
     height: auto;
 }
 
-#graphHeader span:last-child {
-    justify-content: center;
-    
-
+#graphHeader {
+    display: flex;
+    align-items: baseline;
+    padding: 10px;
 }
 
 #graphHeader input {
     width: 115px;
     margin: 5px 5px 0px 5px;
 }
+
+#inputContainer {
+    width: 50%;
+}
+
+#result {
+    width: 50%;    
+}
+
 
 /* pizzes thumbnails */
 #pizzasDisplay img {

@@ -1,5 +1,6 @@
 const getPizzasBtn = document.getElementById('getPizzas');
 const pizzasDisplay = document.getElementById('pizzasDisplay');
+
 const imgArray = [
   'https://cdn-images-1.medium.com/max/1600/1*Wlx63hI3q70lKaGtVvH-ZA.jpeg',
   'https://s3-media2.fl.yelpcdn.com/bphoto/ejfH5dBk4pm_PI_TnLaxWQ/ls.jpg',
@@ -22,11 +23,16 @@ const imgArray = [
 
 ]
 
-  imgArray.forEach(url => {
-    let newIMG = document.createElement('DIV');
-    let image = new Image()
-    image.src = url;
-    pizzasDisplay.appendChild(image);
-  })
+
+function showPizzas() {
+    imgArray.forEach(url => {
+      let newIMG = document.createElement('DIV');
+      let image = new Image()
+      image.src = url;
+      pizzasDisplay.appendChild(image);
+    });
+}
+
+getPizzasBtn.addEventListener('click', showPizzas)
 
 

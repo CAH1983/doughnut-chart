@@ -34,10 +34,10 @@
             <h3> Parameters </h3>
 
             
-            <div class="slidecontainer">
+            <div class="slidecontainer" id="sliderOne">
                 <div> Shape </div>
                 <div><input type="range" min="1" max="100" value="50"></div>
-                <div class="percentage"> 45% </div>
+                <div class="percentage" id="percentageOne"> 45% </div>
             </div>
             <div class="slidecontainer">
                 <div> Pattern </div>
@@ -60,16 +60,18 @@
                 <div class="percentage">  45% </div>
             </div>
 
+
         </div>
 
         <!-- doughnut chart -->
             <div id="doughnutContainer">
                 <div id="graphHeader">
-                    <p><input type="text">
-                        <span> 🏀 </span>
-                        <span> 23,400 </span>
+                    <div id="inputContainer">
+                        <input type="text" placeholder="Enter a value">
+                        <button> 🏀 </button> 
+                    </div>
 
-                    </p>
+                    <div id="result"> 00,000 </div>
                     
 
                 </div>
