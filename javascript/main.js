@@ -15,7 +15,7 @@ let massPopChart = new Chart(mainChart, {
     datasets: [{
       label: 'customers',
       data: [
-        617594,
+        217594,
         181045,
         153060,
         106519,
@@ -54,18 +54,6 @@ let massPopChart = new Chart(mainChart, {
 });
 
 
-// range sliders function to update the percentage value
-
-// const slider = document.getElementById('cursorsContainer').querySelectorAll('input');
-// let output = document.getElementsByClassName('percentage');
-
-// output.innerHTML = slider.value;
-
-// slider.oninput = function () {
-//   console.log(slider.value);
-//   output.innerHTML = slider.value;
-// }
-
 // update the input above the doughnut chart
 const graphInput = document.getElementById('graphHeader').querySelector('input');
 
@@ -77,18 +65,53 @@ function updateText() {
 
 graphInput.addEventListener('change', updateText);
 
-// test
+// test range slider function to update the percentage (tried to DRY it using for loops but didn't work)
 
-const sliderOne = document.getElementById('sliderOne').querySelector('input');
-const percentageOne = document.getElementById('percentageOne');
+const sliderOne = document.getElementById('slider1');
+const sliderTwo = document.getElementById('slider2');
+const sliderThree = document.getElementById('slider3');
+const sliderFour = document.getElementById('slider4');
+const sliderFive = document.getElementById('slider5');
 
-percentageOne.innerHTML = sliderOne.value;
+const percentageOne = document.getElementById('percentage1');
+const percentageTwo = document.getElementById('percentage2');
+const percentageThree = document.getElementById('percentage3');
+const percentageFour = document.getElementById('percentage4');
+const percentageFive = document.getElementById('percentage5');
+
+percentageOne.innerHTML = sliderOne.value + '%';
 
 sliderOne.oninput = function() {
   console.log(this.value);
-  percentageOne.innerHTML = sliderOne.value + '%';
+  percentageOne.innerHTML = this.value + '%';
   this.style.color = 'red';
 }
+
+sliderTwo.oninput = function() {
+  console.log(this.value);
+  percentageTwo.innerHTML = this.value + '%';
+  this.style.color = 'green';
+}
+
+sliderThree.oninput = function() {
+  console.log(this.value);
+  percentageThree.innerHTML = this.value + '%';
+  this.style.color = 'red';
+}
+
+sliderFour.oninput = function() {
+  console.log(this.value);
+  percentageFour.innerHTML = this.value + '%';
+  this.style.color = 'green';
+}
+
+sliderFive.oninput = function() {
+  console.log(this.value);
+  percentageFive.innerHTML = this.value + '%';
+  this.style.color = 'red';
+}
+
+
 
 
 

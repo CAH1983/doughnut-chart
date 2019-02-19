@@ -64,6 +64,10 @@ h3 {
     height: auto;
 }
 
+div#pizzaGrid:first-child {
+    height: 55px;
+}
+
 #graphHeader {
     display: flex;
     align-items: baseline;
